@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Install frida-compile
-        run: npm install -g @aspect-build/frida-compile
+        run: npm install -g frida-compile
 
       - name: Compile agent
         run: frida-compile index.js -o agent.js
